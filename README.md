@@ -1,2 +1,8 @@
 # Kiva
- Improving loan funding
+Kiva is an online platform to extend financial services to poor and financially excluded people around the world through the use of crowdsourced loans. Kiva claims that its lenders have provided over $1 billion dollars in loans to over 2 million people across the world many of whom might have been unable to find loans otherwise. Although the majority of loans are funded, roughly 7% of loans are not fully funded on the platform. In order to fund as many people as possible, it is important to be able to predict which loans will be funded and which loans that will not be fully funded. 
+
+The easiest current way to predict if a loan will be fully funded is to assume that all loans are funded. This produces an accuracy of roughly 93%; however, with a sensitivity of 0%, this null model is worthless in determining if a loan will not be funded. Identifying if a loan is likely to be unfunded is important so that these applications can be modified in order to improve their funding odds. I believe a model can be developed that will better predict which loans will not be fully funded. To do this used a Random Forest algorithm and then attempted to optimize the model on sensitivity.
+
+Overall, I was able to produce a model that predicts if a loan will not be fully funded. This model performs much better than my initial base model in properly predicting which loans will not be fully funded. This improvement in model sensitivity did however come at the cost of reduced accuracy in the final model. This trade-off was determined to be acceptable because the main objective on the model was to better classify loans that will not be fully funded. With this information, loans applications that are likely not to be funded can be targeted and updated before they ever make it onto the platform.
+
+A write up of my work and the code used in my analysis is posted.
